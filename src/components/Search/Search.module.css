@@ -1,0 +1,46 @@
+.container {
+    border: rgb(144,145,149) solid 1px;
+    padding: 5% 10% 0 0;
+}
+.wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 46px;
+    height: 46px;
+    cursor: pointer;
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 46px;
+    height: 46px;
+    cursor: pointer;
+}
+.menu:hover {
+    transition: all 0.4s;
+    background: #F44242;
+
+}
+.search:hover {
+    transition: all 0.4s;
+    background: #4285F4;
+}
+@media screen and (max-width: 760px) {
+    .container {
+        padding: 7% 10% 0 7%;
+        width: 100%;
+        position: absolute;
+        border: none;
+        z-index: 2;
+    }
+    .wrapper {
+        width: 100%;
+        justify-content: space-between;
+    }
+}

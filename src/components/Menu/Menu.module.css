@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    justify-content: center;
+    border: rgb(144,145,149) solid 1px;
+    padding-top: 10%;
+}
+ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+li {
+    height: max-content;
+}
+a {
+    color: white;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 23px;
+}
+@media screen and (max-width: 1130px) {
+    a {
+        font-size: 12px;
+        line-height: 17px;
+    }
+}
+@media screen and (max-width: 830px) {
+    ul {
+        flex-wrap: wrap;
+    }
+    a {
+        font-size: 16px;
+        line-height: 23px;
+    }
+}
+@media screen and (max-width: 760px) {
+    .container {
+        display: none;
+        position: absolute;
+        border: none;
+        height: 30vh;
+        z-index: 5;
+    }
+}

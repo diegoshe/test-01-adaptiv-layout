@@ -1,0 +1,17 @@
+
+.carrousel_wrapper {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    z-index: -3;
+}
+.carrousel_image {
+    background-size: cover !important;
+    height: 100vh;
+}
+@media screen and (max-width: 760px) {
+    .carrousel_image {
+        height: 33.33vh;
+    }
+}
+
